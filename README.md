@@ -1,1 +1,2 @@
-# Lloyds_Banking_Forage_Data_Science_Customer_Churn
+# Lloyds Banking Data Science Job Simulation: Customer Churn Investigation 
+
