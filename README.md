@@ -10,6 +10,18 @@ Faced with a growing trend of customer attrition—particularly among young prof
 
 In 2022, SmartBank observed a **20.4% churn rate** across its customer base, posing a direct threat to its profitability and market share. A detailed diagnostic revealed that the churn is not tied to seasonal trends and is spread across digital engagement points such as mobile apps, websites, and online banking portals. The data indicates that churners are disproportionately represented among married individuals, low-income earners, and customers whose service complaints were unresolved. In addition, a noticeable lag in login recency and feedback resolution correlates with elevated attrition risks.
 
+<p align="center">
+  <img src="/assets/churn_rate_distribution.png" alt="Churn Rate Distribution">
+</p>
+
+<p align="center">
+  <img src="/assets/digital_channel_usage.png" alt="Digital Channel Usage">
+</p>
+
+<p align="center">
+  <img src="/assets/login_recency_timeseries.png" alt="Login Recency Time Series">
+</p>
+
 ## Analytical Approach
 
 The solution framework consists of exploratory analysis, feature engineering, and model development. Data was sourced from five structured datasets encompassing customer demographics, transaction history, service interaction logs, online activity, and churn status.
@@ -18,17 +30,46 @@ After preprocessing steps—such as one-hot encoding of categorical variables, n
 
 Model evaluation was based on multiple performance metrics including AUC-ROC, precision, recall, and F1-score. The best-performing model, **XGBoost**, achieved an **AUC of 0.57**—highlighting modest but informative predictive power. Feature importance analysis revealed that interaction frequency, service usage type, and resolution status were the most critical predictors of churn.
 
+<p align = "center">
+  <img src= "/assets/auc_comparison.png" alt= "AUC-ROC comparison">
+</p>
+
 ## Strategic Insights
 
 The predictive model uncovered several actionable insights:
 
 - Customers who submitted unresolved complaints or feedback were significantly more likely to churn, emphasizing the need for service recovery protocols.
 
-- Married individuals and middle-aged adults (30–39 years) exhibited higher churn rates, likely linked to life-stage-driven financial stressors.
+<p align="center">
+  <img src="/assets/interaction_resolution.png" alt="Interaction Resolution Breakdown">
+</p>
+
+<p align="center">
+  <img src="/assets/interaction_churn.png" alt="Resolution Status and Churn">
+</p>
+
+
+- Married individuals and middle-aged adults (30–39 years) exhibited higher churn rates at nearly 30% and 35.3%, respectively. This is likely linked to life-stage-driven financial stressors.
+
+<p align="center">
+  <img src="/assets/age_group_churn.png" alt="Age Group Churn Distribution">
+</p>
+
+<p align="center">
+  <img src="/assets/marital_status_churn.png" alt="Marital Status Churn Distribution">
+</p>
 
 - Low-income segments experienced a churn rate exceeding 35%, indicating the need for affordability-focused financial products.
 
+<p align="center">
+  <img src="/assets/income_churn_analysis.png" alt="Income Level and Churn">
+</p>
+
 - Digital recency proved predictive, with churners having longer gaps since their last login, suggesting that inactivity can serve as an early warning signal.
+
+<p align="center">
+  <img src="/assets/recency_boxplot.png" alt="Recency by Churn Status">
+</p>
 
 - No single digital platform dominated customer engagement, offering an opportunity to improve user experience consistently across all channels.
 
@@ -37,6 +78,9 @@ The predictive model uncovered several actionable insights:
 Despite the relatively low AUC scores across all models, the XGBoost classifier demonstrated the highest discriminatory power. The confusion matrix showed high specificity but low recall—while the model was effective at identifying non-churners, it missed a majority of actual churners. This limitation presents an avenue for future improvement through model recalibration and ensemble strategies.
 
 A visual summary of feature importance confirms that resolution status, number of interactions, and service access channel were the most influential variables. ROC curves further validate XGBoost as the best-performing model, albeit with room for optimization.
+
+![](/assets/xgboost_confusion_matrix.png)
+![](/assets/xgboost_feature_importance.png)
 
 ## Business Recommendations
 
