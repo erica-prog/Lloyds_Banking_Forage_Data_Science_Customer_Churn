@@ -8,7 +8,7 @@ Faced with a growing trend of customer attrition—particularly among young prof
 
 ## Business Challenge
 
-In 2022, SmartBank observed a 20.4% churn rate across its customer base, posing a direct threat to its profitability and market share. A detailed diagnostic revealed that the churn is not tied to seasonal trends and is spread across digital engagement points such as mobile apps, websites, and online banking portals. The data indicates that churners are disproportionately represented among married individuals, low-income earners, and customers whose service complaints were unresolved. In addition, a noticeable lag in login recency and feedback resolution correlates with elevated attrition risks.
+In 2022, SmartBank observed a **20.4% churn rate** across its customer base, posing a direct threat to its profitability and market share. A detailed diagnostic revealed that the churn is not tied to seasonal trends and is spread across digital engagement points such as mobile apps, websites, and online banking portals. The data indicates that churners are disproportionately represented among married individuals, low-income earners, and customers whose service complaints were unresolved. In addition, a noticeable lag in login recency and feedback resolution correlates with elevated attrition risks.
 
 ## Analytical Approach
 
@@ -16,7 +16,7 @@ The solution framework consists of exploratory analysis, feature engineering, an
 
 After preprocessing steps—such as one-hot encoding of categorical variables, normalization of numeric features, and balancing the dataset using SMOTE—a series of machine learning algorithms were evaluated, including Logistic Regression, Decision Trees, Random Forests, Neural Networks, and XGBoost. The XGBoost classifier was ultimately selected for its superior performance in capturing the complex interaction patterns within the dataset.
 
-Model evaluation was based on multiple performance metrics including AUC-ROC, precision, recall, and F1-score. The best-performing model, XGBoost, achieved an AUC of 0.57—highlighting modest but informative predictive power. Feature importance analysis revealed that interaction frequency, service usage type, and resolution status were the most critical predictors of churn.
+Model evaluation was based on multiple performance metrics including AUC-ROC, precision, recall, and F1-score. The best-performing model, **XGBoost**, achieved an **AUC of 0.57**—highlighting modest but informative predictive power. Feature importance analysis revealed that interaction frequency, service usage type, and resolution status were the most critical predictors of churn.
 
 ## Strategic Insights
 
