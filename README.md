@@ -79,8 +79,13 @@ Despite the relatively low AUC scores across all models, the XGBoost classifier 
 
 A visual summary of feature importance confirms that resolution status, number of interactions, and service access channel were the most influential variables. ROC curves further validate XGBoost as the best-performing model, albeit with room for optimization.
 
-![](/assets/xgboost_confusion_matrix.png)
-![](/assets/xgboost_feature_importance.png)
+<p align="center">
+  <img src="/assets/xgboost_confusion_matrix.png" alt="XGBoost Confusion Matrix">
+</p>
+
+<p align="center">
+  <img src="/assets/xgboost_feature_importance.png" alt="XGBoost Feature Importance">
+</p>
 
 ## Business Recommendations
 
@@ -98,6 +103,8 @@ Tracking KPIs such as churn reduction by segment, resolution times, and reactiva
 ## Future Work
 
 The current model’s recall performance indicates the need for deeper exploration into ensemble modeling, temporal patterns, and advanced feature engineering. Additionally, the inclusion of qualitative customer feedback and third-party data sources could improve model granularity and accuracy. SHAP-based explainability tools may also be leveraged to enhance transparency and facilitate stakeholder buy-in.
+
+You can click here to view the [report](Lloyds_Banking_Data_Science_Churn_Report.pdf). 
 
 
 
