@@ -1,0 +1,23 @@
+[
+  "Age",
+  "TotalAmountSpent",
+  "AverageAmountSpent",
+  "NumTransactions",
+  "number_of_interactions",
+  "resolved_interactions",
+  "resolution_rate",
+  "LoginFrequency",
+  "Recency",
+  "Gender_F",
+  "Gender_M",
+  "MaritalStatus_Divorced",
+  "MaritalStatus_Married",
+  "MaritalStatus_Single",
+  "MaritalStatus_Widowed",
+  "IncomeLevel_High",
+  "IncomeLevel_Low",
+  "IncomeLevel_Medium",
+  "ServiceUsage_Mobile App",
+  "ServiceUsage_Online Banking",
+  "ServiceUsage_Website"
+]
